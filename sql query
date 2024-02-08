@@ -1,9 +1,9 @@
-//Initialize variables
+// To Initialize variables
 SET @streak_count := 0;
 SET @prev_user_id := NULL;
 SET @prev_streak_active := NULL;
 
-//Calculate streak lengths
+// To Calculate streak lengths
 CREATE TEMPORARY TABLE streaks_new AS
 SELECT
     streak_id,
@@ -22,7 +22,7 @@ FROM
 ORDER BY
     user_id, streak_created;
 
-//Identify the most extended streak for each user
+// To Identify the most extended streak for each user
 SELECT
     user_id,
     MAX(streak_length) AS max_streak_length
