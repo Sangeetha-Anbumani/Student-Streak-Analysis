@@ -19,3 +19,7 @@ How to Use:
 1. Set up a MySQL database and import the provided `user_streaks` table.
 2. Copy the SQL query provided in this project and execute it in your MySQL environment.
 3. The query will generate a result containing each user's ID and their corresponding maximum streak length.
+
+   
+Completed as part of the Advance SQL course on the 365 Data Science website.
+
